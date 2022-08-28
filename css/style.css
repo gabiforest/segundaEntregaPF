@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+.header{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.header nav{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.header img {
+    width: 50%;
+    height: 50%;
+}
+/* FIN DE HEADER */
+
+/* MAIN */
+.h2{
+    text-align: center;
+    background-color: #7fffd481;
+}
+.texto{
+    display: flex;
+    align-items: center;
+    background-color: #7fffd481;
+}
+.texto img{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+/* footer */
+.footer{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+.footer ul li{
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer img{
+    width: 25px;
+    height: 25px;
+}
+/* grid productos */
+.principal {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.container1 {  
+    display: grid;
+    grid-template-columns: REPEAT(AUTOFILL);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tortas tortas tortas"
+      "mini mini mini"
+      "otros otros otros";
+}
+.tortas {
+    grid-area: tortas;
+    display: inline;
+    text-align: CENTER;
+    border-radius: 5px;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.tortas img{
+    width: 200px;
+    height: 200px;
+}
+.main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(0,36,27);
+    background: linear-gradient(90deg, rgba(0,36,27,1) 0%, rgba(61,148,140,1) 35%, rgba(0,212,255,1) 100%);
+}   
+.mini {
+    grid-area: mini;
+    display: inline;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.mini img{
+    width: 200px;
+    height: 200px;
+}
+.otros {
+    grid-area: otros;
+    display: inline;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: top;
+    margin: auto;
+    margin: 10px;
+    padding: 10px;
+}
+.otros img{
+    width: 200px;
+    height: 200px;
+}
+/* Novedades */
+.nove{
+    display: block;
+    align-items: center;
+}
+.nove iframe{
+    width: 1000px;
+    height: 1000px;
+}
+/* Contacto */
+.form{
+    width: auto;
+}
+.form form{
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 5px solid pink;
+}
+/* nosotros */
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    margin: 15px 15px;
+}
+.parrafo{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.divNosotros{
+    display: flex;
+    flex-direction: column;
+    background: #00241b;
+    background: linear-gradient(90deg, #00241b 0%, #3d948c 35%, #00d4ff 100%);
+}
+.seccion{
+    display: inline;
+    text-align: center;
+}
+.foto{
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+/* keyframe */
+@keyframes slidein{
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+/* Dispositivo laptop */
+@media (max-width: 1024px){
+    .form form{
+        width: 500px;
+    }
+    .nove {
+        background: #00241b;
+        background: linear-gradient(90deg, #00241b 0%, #3d948c 35%, #00d4ff 100%);
+    }
+    .h2 {
+        font-size: 30px;
+        color: #221313;
+    }
+}
+/* Dispo Tablet */
+@media (max-width: 768px){
+    .texto{
+        display: inline;
+        text-align: center;
+    }
+    .texto img{
+        width: 250px;
+        height: 250px;
+    }
+    .nove iframe{
+        width: 100%;
+        height: auto;
+    }
+    .form form{
+        width: 375px;
+    }
+    .header a{
+        color: #f32c4dc5;
+    }
+    .nav ul{
+        width: 100%;
+    }
+}
+/* Dispo celu */
+@media (max-width: 450px){
+    .header{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background: #3f5efb;
+        background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+    }
+    .header a{
+        color: #f32c4dc5;
+    }
+    .nav{
+        display: inline;
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+        font-size: 14px;
+    }
+    .nav ul{
+        width: 100%;
+    }
+    .nove iframe{
+        width: 300px;
+        height: 300px;
+    };
+    .form form{
+        width: 275px;
+    }
+    .footer ul li{
+        font-size: 14px;
+    }
+    .foto{
+        width: 300px;
+        height: 300px;
+    }
+    .nove iframe{
+        width: 250px;
+        height: 250px;
+    }
+    .mainNos{
+        width: 100%;
+    }
+    .divNosotros{
+        width: 100%;
+    }
+}
