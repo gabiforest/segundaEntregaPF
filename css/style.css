@@ -5,25 +5,18 @@
 }
 /* HEADER */
 .header{
-    display: flex;
-    flex-direction: row;
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
 .header nav{
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
-.header img {
-    width: 50%;
-    height: 50%;
-}
-/* FIN DE HEADER */
+
+FIN DE HEADER
 
 /* MAIN */
-.h2{
-    text-align: center;
-    background-color: #7fffd481;
-}
-.texto{
+
+
+/* .texto{
     display: flex;
     align-items: center;
     background-color: #7fffd481;
@@ -32,7 +25,7 @@
     display: flex;
     width: 50%;
     height: 50%;
-}
+} */
 
 /* footer */
 .footer{
@@ -114,50 +107,19 @@
     height: 200px;
 }
 /* Novedades */
-.nove{
-    display: block;
-    align-items: center;
-}
-.nove iframe{
-    width: 1000px;
-    height: 1000px;
-}
-/* Contacto */
-.form{
-    width: auto;
-}
-.form form{
-    display:flex;
-    flex-direction: column;
-    margin: 5px;
-    border: 5px solid pink;
-}
-/* nosotros */
-.titulo{
-    font-size: 50px;
-    text-align: center;
-    margin: 15px 15px;
-}
+
+/*Contacto */
 .parrafo{
-    margin: 10px;
-    padding: 10px;
-    font-size: 20px;
-}
-.divNosotros{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* nosotros */
+.divNosotros{
     background: #00241b;
     background: linear-gradient(90deg, #00241b 0%, #3d948c 35%, #00d4ff 100%);
-}
-.seccion{
-    display: inline;
-    text-align: center;
-}
-.foto{
-    margin: 15px;
-    padding: 10px;
-    width: 500px;
-    height: 500px;
 }
 /* keyframe */
 @keyframes slidein{
@@ -169,91 +131,5 @@
     to {
       margin-left: 0%;
       width: 100%;
-    }
-}
-/* Dispositivo laptop */
-@media (max-width: 1024px){
-    .form form{
-        width: 500px;
-    }
-    .nove {
-        background: #00241b;
-        background: linear-gradient(90deg, #00241b 0%, #3d948c 35%, #00d4ff 100%);
-    }
-    .h2 {
-        font-size: 30px;
-        color: #221313;
-    }
-}
-/* Dispo Tablet */
-@media (max-width: 768px){
-    .texto{
-        display: inline;
-        text-align: center;
-    }
-    .texto img{
-        width: 250px;
-        height: 250px;
-    }
-    .nove iframe{
-        width: 100%;
-        height: auto;
-    }
-    .form form{
-        width: 375px;
-    }
-    .header a{
-        color: #f32c4dc5;
-    }
-    .nav ul{
-        width: 100%;
-    }
-}
-/* Dispo celu */
-@media (max-width: 450px){
-    .header{
-        display: inline;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        background: #3f5efb;
-        background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
-    }
-    .header a{
-        color: #f32c4dc5;
-    }
-    .nav{
-        display: inline;
-        width: 100%;
-        align-items: center;
-        background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
-        font-size: 14px;
-    }
-    .nav ul{
-        width: 100%;
-    }
-    .nove iframe{
-        width: 300px;
-        height: 300px;
-    };
-    .form form{
-        width: 275px;
-    }
-    .footer ul li{
-        font-size: 14px;
-    }
-    .foto{
-        width: 300px;
-        height: 300px;
-    }
-    .nove iframe{
-        width: 250px;
-        height: 250px;
-    }
-    .mainNos{
-        width: 100%;
-    }
-    .divNosotros{
-        width: 100%;
     }
 }
