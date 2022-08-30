@@ -10,23 +10,22 @@
 .header nav{
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
-
-FIN DE HEADER
+.header a:hover{
+    color: #16ecb7c7;
+}
+.active{
+    font-weight: bold ;
+}
+/* FIN DE HEADER */
 
 /* MAIN */
-
-
-/* .texto{
-    display: flex;
-    align-items: center;
-    background-color: #7fffd481;
+.principal {
+    animation-duration: 3s;
+    animation-name: slidein;
 }
-.texto img{
-    display: flex;
-    width: 50%;
-    height: 50%;
-} */
-
+body{
+    background-color: #8080803f;
+}
 /* footer */
 .footer{
     background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
@@ -38,73 +37,32 @@ FIN DE HEADER
     text-decoration: none;
     color: black;
 }
+.footer a:hover{
+    color: #16ecb7c7;
+    box-shadow: #00241b;
+}
 .footer img{
     width: 25px;
     height: 25px;
 }
-/* grid productos */
-.principal {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-.container1 {  
-    display: grid;
-    grid-template-columns: REPEAT(AUTOFILL);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "tortas tortas tortas"
-      "mini mini mini"
-      "otros otros otros";
-}
-.tortas {
-    grid-area: tortas;
-    display: inline;
-    text-align: CENTER;
-    border-radius: 5px;
-    margin: auto;
-    margin: 10px;
-    padding: 10px;
-}
+/* productos */
 .tortas img{
     width: 200px;
     height: 200px;
-}
-.main {
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: rgb(0,36,27);
-    background: linear-gradient(90deg, rgba(0,36,27,1) 0%, rgba(61,148,140,1) 35%, rgba(0,212,255,1) 100%);
-}   
-.mini {
-    grid-area: mini;
-    display: inline;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: top;
-    margin: auto;
-    margin: 10px;
-    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .mini img{
     width: 200px;
     height: 200px;
-}
-.otros {
-    grid-area: otros;
-    display: inline;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: top;
-    margin: auto;
-    margin: 10px;
-    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .otros img{
     width: 200px;
     height: 200px;
+    margin-top: 2px;
+    margin-bottom: 5px;
 }
 /* Novedades */
 
@@ -116,10 +74,32 @@ FIN DE HEADER
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.parrafo table{
+    border: solid #16ecb7c7 5px;
+    color: #ee5c74;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.color{
+    background-color: #fdcbf1 ;
+    color: #ee5c74;
+}
+.color:hover{
+    background-color: black;
+    color: white;
+}
+.form-label{
+    color:#ee5c74;
+}
 /* nosotros */
-.divNosotros{
-    background: #00241b;
-    background: linear-gradient(90deg, #00241b 0%, #3d948c 35%, #00d4ff 100%);
+.h2:hover{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+h1:hover{
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-delay: 0s;
 }
 /* keyframe */
 @keyframes slidein{
@@ -131,5 +111,16 @@ FIN DE HEADER
     to {
       margin-left: 0%;
       width: 100%;
+    }
+}
+@keyframes girar{
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(360deg);
+    }
+    100& {
+        transfom:rotateX(360deg);
     }
 }
